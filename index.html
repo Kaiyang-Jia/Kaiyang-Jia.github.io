@@ -1,84 +1,112 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>贾铠阳 - 学术主页</title>
-    <!-- 引入 Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>贾铠阳 - 个人学术主页</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
+    <header>
+        <div class="container">
+            <h1>贾铠阳</h1>
+            <h2>Kaiyang JIA</h2>
             <nav>
-                <a href="#home">首页</a>
-                <a href="#about">关于我</a>
+                <a href="#about">关于</a>
+                <a href="#education">教育背景</a>
+                <a href="#research">研究经历</a>
                 <a href="#publications">发表论文</a>
+                <a href="#contact">联系方式</a>
             </nav>
-        </header>
-
-        <div class="main-content">
-            <aside class="sidebar">
-                <div class="profile-card">
-                    <img src="/api/placeholder/180/180" alt="贾铠阳照片" class="profile-image">
-                    <h1>贾铠阳</h1>
-                    <div class="social-links">
-                        <a href="mailto:jiakaiyang96@163.com" class="contact-link">
-                            <span class="icon">✉️</span>
-                            <span>jiakaiyang96@163.com</span>
-                        </a>
-                        <a href="#" class="contact-link">
-                            <span class="icon">📍</span>
-                            <span>江苏省南京市</span>
-                        </a>
-                    </div>
-                </div>
-            </aside>
-
-            <main class="content">
-                <section id="about" class="section">
-                    <h2>关于我</h2>
-                    <div class="about-content">
-                        <p><strong>研究方向：</strong>城乡发展与土地利用、国土空间规划</p>
-                        <p>在城乡发展与土地利用、国土空间规划等领域发表论文13篇，其中第一作者及通讯作者6篇。</p>
-                    </div>
-                </section>
-
-                <section id="publications" class="section">
-                    <h2>发表论文</h2>
-                    
-                    <div class="publications-group">
-                        <h3>第一作者或通讯作者</h3>
-                        <ol class="publication-list">
-                            <li>
-                                <p class="pub-title"><strong>Jia, K</strong>., Huang, X., Qiao, W., & Zhong, S. (2024).</p>
-                                <p class="pub-name">Unpacking divergent rural-urban land use dynamics in county urbanization: A comparative socio-spatial analytics approach.</p>
-                                <p class="pub-journal">Cities, 154, 105343. <span class="journal-impact">（SSCI, Q1）</span></p>
-                            </li>
-                            <li>
-                                <p class="pub-title"><strong>Jia, K</strong>., Qiao, W., Chai, Y., Feng, T., Wang, Y., & Ge, D. (2020).</p>
-                                <p class="pub-name">Spatial distribution characteristics of rural settlements under diversified rural production functions: A case of Taizhou, China.</p>
-                                <p class="pub-journal">Habitat International, 102, 102201. <span class="journal-impact">（SSCI, Q1）</span></p>
-                            </li>
-                            <!-- 其他论文条目 -->
-                        </ol>
-                    </div>
-
-                    <div class="publications-group">
-                        <h3>其他位序作者</h3>
-                        <ol class="publication-list">
-                            <li>
-                                <p class="pub-title">Hu, X., Li, H., Zhang, X., Yuan, Y., & <strong>Jia, K</strong>. (2024).</p>
-                                <p class="pub-name">How rent facilitates capital accumulation: A case study of rural land capitalization in Suzhou, China.</p>
-                                <p class="pub-journal">Land Use Policy, 139, 107063. <span class="journal-impact">（SSCI, Q1）</span></p>
-                            </li>
-                            <!-- 其他论文条目 -->
-                        </ol>
-                    </div>
-                </section>
-            </main>
         </div>
-    </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>关于我</h2>
+            <div class="profile-container">
+                <div class="profile-text">
+                    <p>我的主要研究方向为城乡发展与土地利用、国土空间规划。目前致力于探索城乡发展动态及其土地利用模式，以及国土空间规划的理论与实践。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>教育背景</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <h3>博士</h3>
+                    <p>南京大学</p>
+                </div>
+                <div class="education-item">
+                    <h3>硕士</h3>
+                    <p>南京师范大学</p>
+                </div>
+                <div class="education-item">
+                    <h3>学士</h3>
+                    <p>南京农业大学</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>研究经历</h2>
+            <div class="research-experience">
+                <ul>
+                    <li>主持江苏省研究生科研创新计划项目《乡村多功能化背景下县域土地利用模式特征及形成机制研究》（KYCX22_0113）</li>
+                    <li>主持江苏省研究生科研创新计划项目《乡村多功能化视角下的村镇建设格局特征及优化研究》（KYCX20_1266）</li>
+                    <li>完成多项中国国土勘测规划院外协项目、江苏省社科联决策咨询研究基地课题、江苏省自然资源科技计划项目</li>
+                    <li>参与江苏省、广东省等多地国土空间规划项目</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>发表论文</h2>
+            <div class="publications-list">
+                <h3>第一作者或通讯作者</h3>
+                <div class="publication-item">
+                    <p>[1] Jia, K., Huang, X., Qiao, W., & Zhong, S. (2024). Unpacking divergent rural-urban land use dynamics in county urbanization: A comparative socio-spatial analytics approach. Cities, 154, 105343. <span class="journal-info">（SSCI, Q1）</span></p>
+                </div>
+                <div class="publication-item">
+                    <p>[2] Jia, K., Qiao, W., Chai, Y., Feng, T., Wang, Y., & Ge, D. (2020). Spatial distribution characteristics of rural settlements under diversified rural production functions: A case of Taizhou, China. Habitat International, 102, 102201. <span class="journal-info">（SSCI, Q1）</span></p>
+                </div>
+                <div class="publication-item">
+                    <p>[3] He, T., Qiao, W. *, Jia, K. *, Chai, Y., Hu, Y., Sun, P., ... & Feng, T. (2020). Selecting Rural Development Paths Based on Village Multifunction: A Case of Jingjiang City, China. Complexity, 2020(1), 7590942. <span class="journal-info">（SCI, Q2）</span></p>
+                </div>
+                <div class="publication-item">
+                    <p>[4] 贾铠阳, 乔伟峰, 胡晓亮 & 黄贤金. (2022). 江苏省典型县域村镇建设格局演化模式. 地理学报 (12), 2954-2971. <span class="journal-info">（CSSCI, 地理学领域TOP期刊）</span></p>
+                </div>
+                <div class="publication-item">
+                    <p>[5] 贾铠阳, 乔伟峰, 王亚华, 戈大专, & 黄璐莹. (2019). 乡村振兴背景下村域尺度国土空间规划: 认知, 职能与构建. 中国土地科学, 33(8), 16-23. <span class="journal-info">（CSSCI）</span></p>
+                </div>
+                <div class="publication-item">
+                    <p>[6] 乔伟峰,李琛,戴凌玲,贾铠阳* & 杨春花.(2024).乡村地域多功能演化与土地利用转型耦合研究进展与展望.地理研究(06),1556-1571. <span class="journal-info">（CSSCI）</span></p>
+                </div>
+
+                <h3>其他合作论文</h3>
+                <div class="publication-item">
+                    <p>[1] Hu, X., Li, H., Zhang, X., Yuan, Y., & Jia, K. (2024). How rent facilitates capital accumulation: A case study of rural land capitalization in Suzhou, China. Land Use Policy, 139, 107063. <span class="journal-info">（SSCI, Q1）</span></p>
+                </div>
+                <!-- 其他合作论文可以根据需要展示 -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <div class="contact-info">
+                <p>邮箱：jiakaiyang96@163.com</p>
+                <div class="social-links">
+                    <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 贾铠阳. 保留所有权利。</p>
+        </div>
+    </footer>
 </body>
-</html>
+</html> 
