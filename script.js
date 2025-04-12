@@ -48,5 +48,20 @@ document.addEventListener('DOMContentLoaded', function() {
             // 更新页面标题
             document.title = '贾铠阳 - 个人学术主页';
         }
+        
+        // 修复论文列表样式
+        fixPublicationDisplay();
+    }
+    
+    // 修复论文列表的显示问题
+    function fixPublicationDisplay() {
+        const paperTitles = document.querySelectorAll('.paper-title');
+        paperTitles.forEach(title => {
+            // 确保当前语言的标题正常显示
+            const visibleLinks = title.querySelectorAll('a[style="display: block;"]');
+            if (visibleLinks.length > 0) {
+                title.style.display = 'block';
+            }
+        });
     }
 });

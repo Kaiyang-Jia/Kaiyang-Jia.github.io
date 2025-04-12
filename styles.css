@@ -12,17 +12,17 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 80px; /* 左右增加内边距 */
+  padding: 0 80px;
 }
 
 /* 导航栏 */
 nav {
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-  margin-left: 180px; /* 增加左侧间距 */
-  margin-right: 180px; /* 增加右侧间距保持平衡 */
+  margin-left: 180px;
+  margin-right: 180px;
   display: flex;
-  justify-content: space-between; /* 导航菜单和语言切换之间的间距 */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -30,7 +30,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: left; /* 左对齐 */
+  text-align: left;
 }
 
 nav ul li {
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #1a73e8; /* 谷歌蓝色 */
+  color: #1a73e8;
 }
 
 /* 语言切换按钮 */
@@ -62,6 +62,7 @@ nav ul li a:hover {
   padding: 5px 8px;
   font-size: 0.9em;
   color: #555;
+  transition: color 0.2s;
 }
 
 .lang-switch button.active {
@@ -81,11 +82,11 @@ nav ul li a:hover {
 /* 个人信息区域 */
 header {
   padding: 40px 0;
-  margin-left: 180px; /* 增加左侧间距 */
-  margin-right: 180px; /* 增加右侧间距 */
+  margin-left: 180px;
+  margin-right: 180px;
   display: flex;
-  align-items: flex-start; /* 调整为顶部对齐 */
-  text-align: left; /* 左对齐文本 */
+  align-items: flex-start;
+  text-align: left;
 }
 
 .profile {
@@ -99,6 +100,7 @@ header {
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 .info {
@@ -129,13 +131,13 @@ header {
 
 /* 内容区域 */
 main {
-  margin-left: 180px; /* 增加左侧间距 */
-  margin-right: 180px; /* 增加右侧间距 */
-  padding: 20px 0; /* 移除左右内边距，改用外边距 */
+  margin-left: 180px;
+  margin-right: 180px;
+  padding: 20px 0;
 }
 
 section {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 section h2 {
@@ -145,7 +147,7 @@ section h2 {
   border-bottom: 1px solid #eee;
   padding-bottom: 8px;
   font-weight: 500;
-  display: block; /* 扩展至整行 */
+  display: block;
 }
 
 section p {
@@ -175,14 +177,87 @@ section ul li a:hover {
   text-decoration: underline;
 }
 
+/* 论文列表样式 */
+.publication-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.publication-list li {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #eee;
+}
+
+.publication-list li:last-child {
+  border-bottom: none;
+}
+
+.paper-title {
+  margin-bottom: 5px;
+}
+
+.paper-title a {
+  font-weight: 500;
+  color: #1a73e8;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.paper-title a:hover {
+  text-decoration: underline;
+}
+
+.journal-info {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 4px;
+  font-size: 0.95em;
+}
+
+.authors {
+  color: #555;
+  font-size: 0.95em;
+}
+
 /* 页脚 */
 footer {
-  margin-left: 180px; /* 增加左侧间距 */
-  margin-right: 180px; /* 增加右侧间距 */
-  padding: 20px 0; /* 移除左右内边距，改用外边距 */
+  margin-left: 180px;
+  margin-right: 180px;
+  padding: 20px 0;
   border-top: 1px solid #eee;
-  text-align: left; /* 左对齐 */
+  text-align: left;
   font-size: 0.9em;
   color: #777;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  nav, header, main, footer {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav, header, main, footer {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .profile {
+    flex-direction: column;
+  }
+  
+  .profile img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav, header, main, footer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
