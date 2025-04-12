@@ -1,37 +1,44 @@
+.html -->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>贾铠阳 - 个人学术主页</title>
+    <title>Kaiyang Jia - Personal Academic Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta name="description" content="贾铠阳的个人学术主页 - 城乡发展与土地利用、国土空间规划研究">
+    <meta name="description" content="Kaiyang Jia's personal academic website - Research on Urban-Rural Development, Land Use and Spatial Planning">
 </head>
 <body>
     <!-- 导航栏 -->
     <nav>
         <ul>
-            <li><a href="index.html">贾铠阳</a></li>
-            <li><a href="#research">研究经历</a></li>
-            <li><a href="#publications">发表论文</a>
-            <li><a href="#education">教育背景</a>
-            <li><a href="#contact">联系方式</a>
+            <li><a href="index.html" class="en">Kaiyang Jia</a><a href="index.html" class="zh">贾铠阳</a></li>
+            <li><a href="#research" class="en">Research</a><a href="#research" class="zh">研究经历</a></li>
+            <li><a href="#publications" class="en">Publications</a><a href="#publications" class="zh">发表论文</a></li>
+            <li><a href="#education" class="en">Education</a><a href="#education" class="zh">教育背景</a></li>
+            <li><a href="#contact" class="en">Contact</a><a href="#contact" class="zh">联系方式</a></li>
         </ul>
+        <div class="lang-switch">
+            <button id="en-btn" class="active">EN</button> | 
+            <button id="zh-btn">中文</button>
+        </div>
     </nav>
 
     <!-- 个人信息区域 -->
     <header>
         <div class="profile">
-            <img src="your-photo.jpg" alt="贾铠阳的照片">
+            <img src="kaiyang.jpeg" alt="Photo of Kaiyang Jia">
             <div class="info">
-                <h1>贾铠阳</h1>
-                <p>博士在读，南京大学地理学院</p>
+                <h1 class="en">Kaiyang Jia</h1>
+                <h1 class="zh">贾铠阳</h1>
+                <p class="en">PhD Candidate, School of Geography and Ocean Science, Nanjing University</p>
+                <p class="zh">博士在读，南京大学地理与海洋科学学院</p>
                 <p>Email: jiakaiyang96@163.com</p>
                 <p>
                     <a href="your-cv.pdf">Curriculum Vitae</a> | 
-                    <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a> | 
-                    <a href="https://www.researchgate.net/profile/YOUR_ID">ResearchGate</a>
+                    <a href="https://scholar.google.com/citations?user=lBb4JhgAAAAJ">Google Scholar</a> | 
+                    <a href="https://www.researchgate.net/profile/Kaiyang-Jia">ResearchGate</a>
                 </p>
             </div>
         </div>
@@ -40,54 +47,105 @@
     <!-- 内容区域 -->
     <main>
         <section id="about">
-            <h2>关于我</h2>
-            <p>我的研究聚焦于城乡发展与土地利用、国土空间规划理论与实践。</p>
-            <p>在城乡发展研究中，我特别关注快速城市化进程中县域间差异化土地利用模式的成因。通过比较研究方法，行为主体互动，对现有城乡土地利用理论框架进行拓展。</p>
-            <p>国土空间规划方面，我聚焦于跨学科理论对国土空间规划体系构建的支撑。近期工作主要围绕国土空间规划的实施监测与评估，尝试将空间分析与因果推断相结合，引入国土空间规划评估方法论。</p>
+            <h2 class="en">About Me</h2>
+            <h2 class="zh">关于我</h2>
+            <p class="en">My research focuses on urban-rural development, land use patterns, and spatial planning theory and practice.</p>
+            <p class="zh">我的研究聚焦于城乡发展与土地利用、国土空间规划理论与实践。</p>
+            
+            <p class="en">In urban-rural development research, I specifically examine the causes of differentiated land use patterns among counties during rapid urbanization. Through comparative research methods and stakeholder interactions, I aim to expand existing theoretical frameworks of urban-rural land use.</p>
+            <p class="zh">在城乡发展研究中，我特别关注快速城市化进程中县域间差异化土地利用模式的成因。通过比较研究方法，行为主体互动，对现有城乡土地利用理论框架进行拓展。</p>
+            
+            <p class="en">In spatial planning, I focus on how interdisciplinary theories support the construction of spatial planning systems. My recent work centers on implementation monitoring and evaluation of spatial plans, attempting to combine spatial analysis with causal inference to introduce new evaluation methodologies for spatial planning.</p>
+            <p class="zh">国土空间规划方面，我聚焦于跨学科理论对国土空间规划体系构建的支撑。近期工作主要围绕国土空间规划的实施监测与评估，尝试将空间分析与因果推断相结合，引入国土空间规划评估方法论。</p>
         </section>
 
         <section id="education">
-            <h2>教育背景</h2>
+            <h2 class="en">Education</h2>
+            <h2 class="zh">教育背景</h2>
             <ul>
-                <li>博士在读，南京大学地理学院</li>
-                <li>硕士，南京大学地理科学学院</li>
-                <li>学士，南京农业大学公共管理学院</li>
-            </ul>
-        </section>
-
-        <section id="research">
-            <h2>研究经历</h2>
-            <ul>
-                <li>主持江苏省研究生科研创新计划项目《乡村多功能化背景下县域土地利用模式特征及形成机制研究》（KYCX22_0113）</li>
-                <li>主持江苏省研究生科研创新计划项目《乡村多功能化视角下的村镇建设格局特征及优化研究》（KYCX20_1266）</li>
-                <li>完成多项中国国土勘测规划院外协项目、江苏省社科联决策咨询研究基地课题、江苏省自然资源科技计划项目</li>
-                <li>参与江苏省、广东省等多地国土空间规划项目</li>
+                <li class="en">PhD Candidate, School of Geography, Nanjing University</li>
+                <li class="zh">博士在读，南京大学地理学院</li>
+                
+                <li class="en">Master's Degree, School of Geographic Sciences, Nanjing University</li>
+                <li class="zh">硕士，南京大学地理科学学院</li>
+                
+                <li class="en">Bachelor's Degree, School of Public Administration, Nanjing Agricultural University</li>
+                <li class="zh">学士，南京农业大学公共管理学院</li>
             </ul>
         </section>
 
         <section id="publications">
-            <h2>发表论文</h2>
+            <h2 class="en">Publications</h2>
+            <h2 class="zh">发表论文</h2>
             <ul>
-                <li><a href="#">Jia, K., Huang, X., Qiao, W., & Zhong, S. (2024). Unpacking divergent rural-urban land use dynamics in county urbanization: A comparative socio-spatial analytics approach.</a><br><em>Cities</em>, 154, 105343. （SSCI, Q1）</li>
-                <li><a href="#">Jia, K., Qiao, W., Chai, Y., Feng, T., Wang, Y., & Ge, D. (2020). Spatial distribution characteristics of rural settlements under diversified rural production functions: A case of Taizhou, China.</a><br><em>Habitat International</em>, 102, 102201. （SSCI, Q1）</li>
-                <li><a href="#">贾铠阳, 乔伟峰, 胡晓亮 & 黄贤金. (2022). 江苏省典型县域村镇建设格局演化模式.</a><br><em>地理学报</em> (12), 2954-2971. （CSSCI, 地理学领域TOP期刊）</li>
-                <li><a href="#">贾铠阳, 乔伟峰, 王亚华, 戈大专, & 黄璐莹. (2019). 乡村振兴背景下村域尺度国土空间规划: 认知, 职能与构建.</a><br><em>中国土地科学</em>, 33(8), 16-23. （CSSCI）</li>
-                <li><a href="#">乔伟峰, 李琛, 戴凌玲, 贾铠阳* & 杨春花. (2024). 乡村地域多功能演化与土地利用转型耦合研究进展与展望.</a><br><em>地理研究</em> (06), 1556-1571. （CSSCI）</li>
+                <li>
+                    <a href="https://doi.org/10.1016/j.habitatint.2020.102201">Unpacking divergent rural-urban land use dynamics in county urbanization: A comparative socio-spatial analytics approach</a><br>
+                    <span class="journal-year">Cities, 2024</span><br>
+                    Jia, K., Huang, X., Qiao, W., and Zhong, S.
+                </li>
+                <li>
+                    <a href="https://doi.org/10.1016/j.cities.2024.105343">Spatial distribution characteristics of rural settlements under diversified rural production functions: A case of Taizhou, China</a><br>
+                    <span class="journal-year">Habitat International, 2020</span><br>
+                    Jia, K., Qiao, W., Chai, Y., Feng, T., Wang, Y., and Ge, D.
+                </li>
+                <li>
+                    <a href="papers/paper1.pdf" download class="en">Evolutionary patterns of rural settlement structure in typical counties of Jiangsu Province</a>
+                    <a href="papers/paper1.pdf" download class="zh">江苏省典型县域村镇建设格局演化模式</a><br>
+                    <span class="journal-year">Acta Geographica Sinica, 2022</span><br>
+                    <span class="en">Jia, K., Qiao, W., Hu, X., and Huang, X.</span>
+                    <span class="zh">贾铠阳, 乔伟峰, 胡晓亮, and 黄贤金</span>
+                </li>
+                <li>
+                    <a href="papers/paper2.pdf" download class="en">Village-level spatial planning in the context of rural revitalization: Cognition, function and construction</a>
+                    <a href="papers/paper2.pdf" download class="zh">乡村振兴背景下村域尺度国土空间规划: 认知, 职能与构建</a><br>
+                    <span class="journal-year">China Land Science, 2019</span><br>
+                    <span class="en">Jia, K., Qiao, W., Wang, Y., Ge, D., and Huang, L.</span>
+                    <span class="zh">贾铠阳, 乔伟峰, 王亚华, 戈大专, and 黄璐莹</span>
+                </li>
+                <li>
+                    <a href="papers/paper3.pdf" download class="en">Research progress and prospects on the coupling of rural multifunctional evolution and land use transformation</a>
+                    <a href="papers/paper3.pdf" download class="zh">乡村地域多功能演化与土地利用转型耦合研究进展与展望</a><br>
+                    <span class="journal-year">Geographical Research, 2024</span><br>
+                    <span class="en">Qiao, W., Li, C., Dai, L., Jia, K.*, and Yang, C.</span>
+                    <span class="zh">乔伟峰, 李琛, 戴凌玲, 贾铠阳*, and 杨春花</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="research">
+            <h2 class="en">Research Experience</h2>
+            <h2 class="zh">研究经历</h2>
+            <ul>
+                <li class="en">Leading the Jiangsu Provincial Graduate Research Innovation Program project "Characteristics and Formation Mechanisms of County Land Use Patterns in the Context of Rural Multifunctionalization" (KYCX22_0113)</li>
+                <li class="zh">主持江苏省研究生科研创新计划项目《乡村多功能化背景下县域土地利用模式特征及形成机制研究》（KYCX22_0113）</li>
+                
+                <li class="en">Leading the Jiangsu Provincial Graduate Research Innovation Program project "Characteristics and Optimization of Rural Settlement Patterns from the Perspective of Rural Multifunctionalization" (KYCX20_1266)</li>
+                <li class="zh">主持江苏省研究生科研创新计划项目《乡村多功能化视角下的村镇建设格局特征及优化研究》（KYCX20_1266）</li>
+                
+                <li class="en">Completed multiple projects from the China Land Survey and Planning Institute, Jiangsu Provincial Social Science Federation, and Jiangsu Provincial Natural Resources Technology Program</li>
+                <li class="zh">完成多项中国国土勘测规划院外协项目、江苏省社科联决策咨询研究基地课题、江苏省自然资源科技计划项目</li>
+                
+                <li class="en">Participated in various spatial planning projects in Jiangsu Province, Guangdong Province, and other regions</li>
+                <li class="zh">参与江苏省、广东省等多地国土空间规划项目</li>
             </ul>
         </section>
 
         <section id="contact">
-            <h2>联系方式</h2>
-            <p><strong>邮箱：</strong> jiakaiyang96@163.com</p>
+            <h2 class="en">Contact</h2>
+            <h2 class="zh">联系方式</h2>
+            <p><strong class="en">Email:</strong><strong class="zh">邮箱：</strong> jiakaiyang96@163.com</p>
             <p>
-                <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a> | 
-                <a href="https://www.researchgate.net/profile/YOUR_ID">ResearchGate</a>
+                <a href="https://scholar.google.com/citations?user=lBb4JhgAAAAJ">Google Scholar</a> | 
+                <a href="https://www.researchgate.net/profile/Kaiyang-Jia">ResearchGate</a>
             </p>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 贾铠阳. 保留所有权利。</p>
+        <p class="en">© 2024 Kaiyang Jia | Nanjing University</p>
+        <p class="zh">© 2024 贾铠阳 | 南京大学</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

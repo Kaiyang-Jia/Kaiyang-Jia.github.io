@@ -1,74 +1,125 @@
-/* 基本样式 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* 设置全局背景和字体 */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #fff;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* 容器样式 */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 80px; /* 左右增加内边距 */
 }
 
 /* 导航栏 */
 nav {
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  margin-left: 180px; /* 增加左侧间距 */
+  margin-right: 180px; /* 增加右侧间距保持平衡 */
+  display: flex;
+  justify-content: space-between; /* 导航菜单和语言切换之间的间距 */
+  align-items: center;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  text-align: left; /* 左对齐 */
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
+  display: inline-block;
+  margin-right: 25px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 1em;
 }
 
 nav ul li a:hover {
-  color: #007bff;
+  color: #1a73e8; /* 谷歌蓝色 */
+}
+
+/* 语言切换按钮 */
+.lang-switch {
+  display: flex;
+  align-items: center;
+}
+
+.lang-switch button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 8px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.lang-switch button.active {
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.lang-switch button:hover {
+  color: #1a73e8;
+}
+
+/* 语言内容控制 */
+.zh {
+  display: none; /* 默认隐藏中文内容 */
 }
 
 /* 个人信息区域 */
 header {
-  padding: 40px;
+  padding: 40px 0;
+  margin-left: 180px; /* 增加左侧间距 */
+  margin-right: 180px; /* 增加右侧间距 */
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* 调整为顶部对齐 */
+  text-align: left; /* 左对齐文本 */
 }
 
 .profile {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 30px;
 }
 
 .profile img {
-  width: 150px;
-  height: 150px;
-  border-radius: 10px;
-  margin-right: 30px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
 }
 
 .info h1 {
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 2em;
+  color: #333;
+  font-weight: 500;
 }
 
 .info p {
   margin: 5px 0;
+  font-size: 1em;
+  color: #555;
 }
 
 .info a {
-  color: #007bff;
+  color: #1a73e8;
   text-decoration: none;
 }
 
@@ -78,39 +129,60 @@ header {
 
 /* 内容区域 */
 main {
-  padding: 40px;
+  margin-left: 180px; /* 增加左侧间距 */
+  margin-right: 180px; /* 增加右侧间距 */
+  padding: 20px 0; /* 移除左右内边距，改用外边距 */
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 section h2 {
   font-size: 1.5em;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  font-weight: 500;
+  display: block; /* 扩展至整行 */
+}
+
+section p {
+  margin-bottom: 15px;
+  font-size: 1em;
+  line-height: 1.7;
+  color: #444;
 }
 
 section ul {
-  list-style: none;
-  padding: 0;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 section ul li {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 section ul li a {
-  color: #007bff;
-  text-decoration: underline;
+  color: #1a73e8;
+  text-decoration: none;
 }
 
 section ul li a:hover {
-  color: #0056b3;
+  text-decoration: underline;
 }
 
 /* 页脚 */
 footer {
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid #ddd;
+  margin-left: 180px; /* 增加左侧间距 */
+  margin-right: 180px; /* 增加右侧间距 */
+  padding: 20px 0; /* 移除左右内边距，改用外边距 */
+  border-top: 1px solid #eee;
+  text-align: left; /* 左对齐 */
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 20px;
 }
